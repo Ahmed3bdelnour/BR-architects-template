@@ -1,0 +1,267 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+	font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.navbar{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	background: white;
+	box-shadow: 0 10px 10px 0 #adadad;
+	transition: all .5s;
+}
+
+.navbar a:not(.menubtn){
+	display: inline-block;
+	text-decoration: none;
+	padding: 15px 15px;
+	color: black;
+	letter-spacing: 3px;
+	text-align: center;
+}
+.navbar a:hover{
+	background: #d1d1d1;
+}
+.innavbar{
+	display: inline-block;
+	float: right;
+}
+
+.bar{
+	height: 3px;
+	width: 20px;
+	background:black;
+	margin: 3px 0;
+}
+.menubtn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+	text-decoration: none;
+	padding: 15px 15px;
+	color: black;
+	text-align: center;
+}
+
+.s2{
+	width: 100%;
+	margin-top: 53px;
+	position: relative;
+}
+
+.s2 img{
+	width: 100%;
+}
+.caption{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	color: white;
+	text-align: center;
+	line-height: 1.5;
+
+}
+
+.caption  span{
+	background: rgba(0, 0, 0,.5);
+	font-size: 20px;
+	padding: 7px 10px;
+	font-weight: bold;
+}
+/*section3*/
+
+.s3{
+	padding: 30px 5%;
+}
+
+.s3p{
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #dbdbdb;
+	padding-left: 0;
+}
+.s3imagecont{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.subimgcont{
+	position: relative;
+	margin: 20px 10px 0 10px;
+}
+.subimgcont img {
+	width: 100%;
+}
+.s3caption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0,.5);
+	padding: 10px 5px;
+	color: white;
+}
+
+.s4{
+	padding: 30px 5%;
+}
+.s4p1{
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #dbdbdb;
+	padding-left: 0;
+}
+
+.s4p2{
+	color: #575757;
+}
+.s4row{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.s4row img{
+	width: 100%;
+}
+.s4col{
+	margin: 20px 10px 0 10px;
+}
+.s4colp1{
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	padding: 10px 0;
+}
+.s4colp2{
+	color: rgba(0, 0, 0, 0.5);
+	padding: 10px 0; 
+
+}
+
+.s4col button{
+	color: white;
+	background: #cccccc;
+	padding: 15px;
+	margin: 10px 0;
+	text-align: center;
+	width: 100%;
+	border: none;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	transition: all .25s;
+}
+
+.s4col button:hover{
+	background: black ;
+}
+
+#contactform input{
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.33);
+	padding: 15px 10px;
+	margin: 15px 0;
+	font-size: 16px;
+}
+
+#contactform button{
+	color: white;
+	border: none;
+	padding: 15px 15px;
+	background: rgb(0, 0, 0);
+	margin: 10px 0;
+	font-size: 16px;
+	transition: all .25s;
+}
+
+#contactform button:hover{
+	background:#cccccc;
+	color: black;
+}
+
+.fs{
+	padding: 30px 5%;
+}
+
+.pfs1{
+	font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+button{
+	cursor: pointer;
+}
+
+img{
+	transition: all .5s;
+}
+
+img:hover{
+	transform: scale(1.05);
+}
+
+
+
+
+/*responsive*/
+@media screen and (max-width:992px){
+	.s3imagecont{
+	grid-template-columns: 50% 50%;
+}
+	.s4row{
+	grid-template-columns: 50% 50%;
+}
+
+}
+
+
+@media screen and (max-width:600px){
+	.menubtn{
+	display: block;
+}
+	.innavbar{display: none;}
+	.s3imagecont{
+	grid-template-columns: 100%;
+}
+	.s4row{
+	grid-template-columns: 100%;
+}
+	.responsive .innavbar,.responsive .innavbar a{
+	display: block;
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+}
+
+@media screen and (max-width:186px){
+.s2{
+	margin-top: 75px;
+}
+}
